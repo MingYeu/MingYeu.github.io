@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Gamble</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Github Gamble</h1>
+      <div class="bet-info">
+        <h2>Bets placed: <span id="betAmount">$0.5</span></h2>
+        <h2>Total Profit/Loss: <span id="profitLoss">$0</span></h2>
+      </div>
+      <div class="bet-selector">
+        <label for="bet">Select Bet:</label>
+        <select id="bet">
+          <option value="0.5">0.5</option>
+          <option value="1">1</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="reset" class="reset-btn">Reset</button>
+      </div>
+
+      <hr />
+
+      <div class="multipliers">
+        <div class="win-column">
+          <h3>Win</h3>
+          <button class="win" data-multiplier="1">x1</button>
+          <button class="win" data-multiplier="1.5">x1.5</button>
+          <button class="win" data-multiplier="2">x2</button>
+          <button class="win" data-multiplier="3">x3</button>
+          <button class="win" data-multiplier="5">x5</button>
+        </div>
+
+        <div class="lose-column">
+          <h3>Lose</h3>
+          <button class="lose" data-multiplier="1">x1</button>
+          <button class="lose" data-multiplier="1.5">x1.5</button>
+          <button class="lose" data-multiplier="2">x2</button>
+          <button class="lose" data-multiplier="3">x3</button>
+          <button class="lose" data-multiplier="5">x5</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
